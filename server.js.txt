@@ -1,0 +1,18 @@
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Home Route
+app.get("/", (req, res) => {
+  res.send("🚀 Hello! Your Render Server is Live!");
+});
+
+// Example API
+app.get("/api/data", (req, res) => {
+  res.json({ message: "This is data from your public API 🎉" });
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
