@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 // Home Route
 app.get("/", (req, res) => {
+
   res.send("🚀 Hello! Your Render Server is Live!");
 });
 
@@ -16,3 +17,4 @@ app.get("/api/data", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
